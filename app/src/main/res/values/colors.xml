@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="KAMENOZOKI">#A5DEE4</color>
+    <color name="SHAREGAKI">#FFBA84</color>
+    <color name="KOHAKU">#CA7A2C</color>
+    <color name="HIWAMOEGI">#90B44B</color>
+    <color name="SHIRONERI">#FCFAF2</color>
+    <color name="TOBI">#724832</color>
+    <color name="KURUMI">#947A6D</color>
+    <color name="NAE">#86C166</color>
+</resources>

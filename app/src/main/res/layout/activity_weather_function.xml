@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/KAMENOZOKI"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.1"
+                android:gravity="center|bottom"
+                android:text="天氣查詢"
+                android:textColor="@color/KOHAKU"
+                android:textSize="30sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/weather_result"
+                android:layout_width="315dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="20dp"
+                android:layout_weight="0.5"
+                android:background="@drawable/tv_border"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="25dp"
+                android:layout_weight="0.1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/weather_elementName"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_weight="0.45"
+                    android:background="@drawable/tv_border"
+                    android:paddingLeft="20sp"
+                    tools:layout_editor_absoluteX="225dp" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.05" />
+
+                <Spinner
+                    android:id="@+id/weather_locationName"
+                    android:layout_width="0dp"
+                    android:layout_height="35dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0.45"
+                    android:background="@drawable/tv_border"
+                    android:paddingLeft="20sp"
+                    tools:layout_editor_absoluteX="47dp" />
+            </LinearLayout>
+
+            <Spinner
+                android:id="@+id/weather_time"
+                android:layout_width="180dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="0.06"
+                android:background="@drawable/tv_border"
+                android:paddingLeft="20sp"
+                tools:layout_editor_absoluteX="96dp" />
+
+            <Button
+                android:id="@+id/weather_search"
+                android:layout_width="230dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="50dp"
+                android:layout_weight="0.2"
+                android:backgroundTint="@color/NAE"
+                android:text="搜尋"
+                android:textSize="30sp"
+                tools:layout_editor_absoluteX="84dp" />
+
+        </LinearLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/weather_floatActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|start"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:src="@drawable/back"
+            app:fabCustomSize="40dp" />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

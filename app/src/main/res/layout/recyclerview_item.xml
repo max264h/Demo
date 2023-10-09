@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="340dp"
+        android:layout_height="230dp"
+        app:cardCornerRadius="30dp"
+        app:cardBackgroundColor="@color/SHIRONERI"
+        app:cardElevation="20dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/function_image"
+                android:layout_width="340dp"
+                android:layout_height="186dp"
+                android:src="@drawable/weather" />
+
+            <TextView
+                android:id="@+id/function_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="天氣狀況"
+                android:textColor="#724832"
+                android:textSize="23sp"
+                android:textStyle="bold|italic" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
